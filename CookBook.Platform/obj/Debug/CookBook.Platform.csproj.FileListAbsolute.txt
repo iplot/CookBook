@@ -1,0 +1,10 @@
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\CookBook.Platform.dll.config
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\CookBook.Platform.dll
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\CookBook.Platform.pdb
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\EntityFramework.dll
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\EntityFramework.xml
+D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitRepos\CookBook\CookBook.Platform\obj\Debug\CookBook.Platform.csprojResolveAssemblyReference.cache
+D:\GitRepos\CookBook\CookBook.Platform\obj\Debug\CookBook.Platform.dll
+D:\GitRepos\CookBook\CookBook.Platform\obj\Debug\CookBook.Platform.pdb
