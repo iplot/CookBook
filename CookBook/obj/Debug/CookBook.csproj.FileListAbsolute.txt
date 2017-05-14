@@ -1,0 +1,17 @@
+D:\GitRepos\CookBook\CookBook\bin\CookBook.dll.config
+D:\GitRepos\CookBook\CookBook\bin\CookBook.dll
+D:\GitRepos\CookBook\CookBook\bin\CookBook.pdb
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Helpers.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Mvc.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Razor.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.Deployment.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.Razor.dll
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Razor.xml
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.xml
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.Deployment.xml
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Webpages.Razor.xml
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Helpers.xml
+D:\GitRepos\CookBook\CookBook\bin\System.Web.Mvc.xml
+D:\GitRepos\CookBook\CookBook\obj\Debug\CookBook.dll
+D:\GitRepos\CookBook\CookBook\obj\Debug\CookBook.pdb

@@ -8,3 +8,13 @@ D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\CookBook.DbLayer.dll
 D:\GitRepos\CookBook\CookBook.Platform\bin\Debug\CookBook.DbLayer.pdb
 D:\GitRepos\CookBook\CookBook.Platform\obj\Debug\CookBook.DbLayer.dll
 D:\GitRepos\CookBook\CookBook.Platform\obj\Debug\CookBook.DbLayer.pdb
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\CookBook.DbLayer.dll.config
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\CookBook.DbLayer.dll
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\CookBook.DbLayer.pdb
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\EntityFramework.dll
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\EntityFramework.xml
+D:\GitRepos\CookBook\CookBook.DbLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitRepos\CookBook\CookBook.DbLayer\obj\Debug\CookBook.DbLayer.csprojResolveAssemblyReference.cache
+D:\GitRepos\CookBook\CookBook.DbLayer\obj\Debug\CookBook.DbLayer.dll
+D:\GitRepos\CookBook\CookBook.DbLayer\obj\Debug\CookBook.DbLayer.pdb

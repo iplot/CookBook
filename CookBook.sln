@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook", "CookBook\CookBook.csproj", "{697B6881-6E9D-4090-9C56-659BB4555165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.DbLayer", "CookBook.Platform\CookBook.DbLayer.csproj", "{6C9B6283-35D7-4961-B1C4-8425E6DC8E83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.DbLayer", "CookBook.DbLayer\CookBook.DbLayer.csproj", "{6C9B6283-35D7-4961-B1C4-8425E6DC8E83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
