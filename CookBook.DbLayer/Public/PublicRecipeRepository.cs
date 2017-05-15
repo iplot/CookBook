@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -30,14 +31,22 @@ namespace CookBook.DbLayer.Public
 
         public async Task<List<RecipeDto>> GetAllItems()
         {
-            Func<Recipe, object> includeHistory = x => x.History;
-            var recipes = await _recipeRepository
+            try
+            {
+                var recipes = await _recipeRepository
                 .GetEntities(null, x => x.History)
                 .ToListAsync();
 
-            return recipes
-                .Select(x => _converter.EntityToDto(x))
-                .ToList();
+                return recipes
+                    .Select(x => _converter.EntityToDto(x))
+                    .ToList();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Error");
+            }
+            return null;
+            
         }
 
         public RecipeDto GetItem(int id)

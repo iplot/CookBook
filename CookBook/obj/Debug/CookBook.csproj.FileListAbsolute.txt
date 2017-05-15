@@ -15,3 +15,10 @@ D:\GitRepos\CookBook\CookBook\bin\System.Web.Helpers.xml
 D:\GitRepos\CookBook\CookBook\bin\System.Web.Mvc.xml
 D:\GitRepos\CookBook\CookBook\obj\Debug\CookBook.dll
 D:\GitRepos\CookBook\CookBook\obj\Debug\CookBook.pdb
+D:\GitRepos\CookBook\CookBook\bin\CookBook.DbLayer.dll
+D:\GitRepos\CookBook\CookBook\bin\EntityFramework.dll
+D:\GitRepos\CookBook\CookBook\bin\EntityFramework.SqlServer.dll
+D:\GitRepos\CookBook\CookBook\bin\CookBook.DbLayer.pdb
+D:\GitRepos\CookBook\CookBook\bin\EntityFramework.xml
+D:\GitRepos\CookBook\CookBook\bin\EntityFramework.SqlServer.xml
+D:\GitRepos\CookBook\CookBook\obj\Debug\CookBook.csprojResolveAssemblyReference.cache
