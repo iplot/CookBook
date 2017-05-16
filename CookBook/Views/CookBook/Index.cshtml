@@ -1,5 +1,16 @@
 ﻿@using CookBook.Models
 @model IEnumerable<RecipeVM>
 
-<h2>Start</h2>
+<div ng-controller="recipe">
+    <div class="row" ng-repeat="recipe in recipes">
+        <h2>{{recipe.title}}</h2>
+    </div>
+</div>
 
+<script>
+    var injector = angular.injector(['ng', 'cookBook']),
+    recipeStorage = injector.get('recipeStorage');
+
+    console.log(injector);
+    console.log(recipeStorage);
+</script>
