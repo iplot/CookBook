@@ -10,7 +10,9 @@
     ];
 
     function RecipeController($scope, recipeStorage) {
-        $scope.recipes = recipeStorage.getAllRecipes();
+        recipeStorage.getAllRecipes().then(function(recipes) {
+            $scope.recipes = recipes.data;
+        });
     }
 
 })();

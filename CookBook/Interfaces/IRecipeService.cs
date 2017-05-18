@@ -12,5 +12,6 @@ namespace CookBook.Interfaces
         Task<IEnumerable<RecipeVM>> GetAllRecipes();
         Task<RecipeVM> GetRecipe(int id);
         Task<RecipeVM> GetRecipeVersion(int versionId);
+        Task<RecipeVM> SaveRecipe(RecipeVM recipeVm);
     }
 }

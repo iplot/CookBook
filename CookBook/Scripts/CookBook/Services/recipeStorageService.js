@@ -10,13 +10,20 @@
     ];
 
     function RecipeStorage ($http, $q) {
-        var recipesList = [];
+        var recipesList = [1];
 
         function loadRecipeById(id) {
-            return $http.send({
+            return $http({
                 method: 'GET',
                 url: '/CookBook/GetRecipe',
                 data: {id: id}
+            });
+        }
+
+        function loadRecipes() {
+            return $http({
+                url: '/CookBook/AllRecipes',
+                method: 'GET'
             });
         }
 
@@ -24,8 +31,24 @@
             setData: function(recipes) {
                 recipesList = recipes;
             },
-            getAllRecipes: function() {
-                return recipesList;
+            getAllRecipes: function () {
+                var deferred = $q.defer(),
+                    loadPromise;
+
+                debugger;
+                if (recipesList.length > 0) {
+                    setTimeout(function() {
+                        deferred.resolve(recipesList);
+                    }, 0);
+                }
+
+                loadPromise = loadRecipes();
+                loadPromise.then(function(recipes) {
+                    recipesList = recipes.data;
+                    deferred.resolve(recipesList);
+                });
+
+                return deferred.promise;
             },
             getRecipeById: function (id) {
                 var i = 0,
@@ -43,10 +66,15 @@
                 
                 if (recipe == null) {
                     //load recipe
-                    return loadRecipeById(id);
+                    loadRecipeById(id).then(function(recipe) {
+                        deferred.resolve(recipe.data);
+                    });
+                } else {
+                    setTimeout(function() {
+                        deferred.resolve(recipe);
+                    }, 0);
                 }
 
-                deferred.resolve(recipe);
                 return deferred.promise;
             }
         };

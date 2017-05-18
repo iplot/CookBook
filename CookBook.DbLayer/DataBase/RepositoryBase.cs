@@ -49,12 +49,23 @@ namespace CookBook.DbLayer.DataBase
 
         public void AddEntityToContext(T entity)
         {
-            _dbSet.Add(entity);
+            var entry = _context.Entry(entity);
+
+            if (entry.State == EntityState.Detached)
+            {
+                _dbSet.Add(entity);
+            }
         }
 
         public async Task<int> AddEntityAndSubmit(T entity)
         {
-            _dbSet.Add(entity);
+			var entry = _context.Entry(entity);
+			
+			if(entry.State == EntityState.Detached)
+			{
+				_dbSet.Add(entity);
+			}
+            
             return await _context.SaveChangesAsync();
         }
 

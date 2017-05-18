@@ -54,6 +54,7 @@
     <Compile Include="Interfaces\IRecipeHistoryRepository.cs" />
     <Compile Include="Interfaces\IRecipeRepository.cs" />
     <Compile Include="Interfaces\IRecipePublicRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Models\DTO\IngredientDTO.cs" />
     <Compile Include="Models\DTO\RecipeDTO.cs" />
     <Compile Include="Models\DTO\RecipeStepDetailDTO.cs" />

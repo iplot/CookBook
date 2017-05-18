@@ -92,6 +92,7 @@ namespace CookBook.DbLayer.Public
         private Recipe GetEntityToAdd(RecipeDto dto)
         {
             Recipe recipe = dto.RecipeId == 0 ? new Recipe() : _recipeRepository.GetEntity(dto.RecipeId);
+            //Recipe recipe = new Recipe();
             recipe = _converter.DtoToEntity(dto, recipe);
 
             return recipe;

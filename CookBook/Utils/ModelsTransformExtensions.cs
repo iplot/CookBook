@@ -22,7 +22,7 @@ namespace CookBook.Utils
                 CreationTime = dto.CreationDate,
                 Ingredients = dto.Ingredients.Select(x => x.ToVM()).ToList(),
                 StepDetails = dto.Details.Select(x => x.ToVM()).ToList(),
-                Versions = dto.Versions.Select(x => x.ToVM()).ToList()
+                Versions = dto.Versions != null ? dto.Versions.Select(x => x.ToVM()).ToList() : null
             };
 
             return recipeVm;

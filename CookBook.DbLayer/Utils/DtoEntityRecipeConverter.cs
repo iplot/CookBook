@@ -13,6 +13,7 @@ namespace CookBook.DbLayer.Utils
     {
         internal Recipe DtoToEntity(RecipeDto recipeDto, Recipe recipeEntity)
         {
+            //recipeEntity.Id = recipeDto.RecipeId;
             recipeEntity.Title = recipeDto.Title;
             recipeEntity.CookTime = recipeDto.CookTime;
             recipeEntity.CreationDate = recipeDto.CreationDate;
@@ -50,7 +51,7 @@ namespace CookBook.DbLayer.Utils
             {
                 Title = recipeBase.Title,
                 Description = recipeBase.Description,
-                CookTime = recipeBase.CookTime,
+                //CookTime = recipeBase.CookTime,
                 CreationDate = recipeBase.CreationDate,
                 Ingredients = IngredientsFromSingleString(recipeBase.Ingredients),
                 Details = StepDetailsFromSingleString(recipeBase.StepDetails)
