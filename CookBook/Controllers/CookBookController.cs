@@ -32,6 +32,18 @@ namespace CookBook.Controllers
             return View(recipes);
         }
 
+        public async Task<ActionResult> RecipeListView()
+        {
+            var recipes = await _recipeService.GetAllRecipes();
+
+            return PartialView("Index", recipes);
+        }
+
+        public async Task<ActionResult> RecipeView()
+        {
+            return PartialView();
+        }
+
         public async Task<ActionResult> EditRecipeView()
         {
             return View();

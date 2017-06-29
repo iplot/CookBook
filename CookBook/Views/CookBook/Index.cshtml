@@ -2,7 +2,13 @@
 @model IEnumerable<RecipeVM>
 
 <div ng-controller="recipe">
-    <div class="row" ng-repeat="recipe in recipes">
-        <h2>{{recipe.title}}</h2>
+    <div class="row" ng-repeat="recipe in recipes" ng-click="gotoRecipe(recipe.RecipeId)">
+        <div class="col-md-3">
+            <img src="https://thumbs.dreamstime.com/thumb_2214/22141863.jpg" />
+        </div>
+        <div class="col-md-9">
+            <p>{{recipe.Title}}</p>
+            <small>{{recipe.Description}}</small>
+        </div>
     </div>
 </div>

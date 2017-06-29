@@ -10,7 +10,7 @@
     ];
 
     function RecipeStorage ($http, $q) {
-        var recipesList = [1];
+        var recipesList = [];
 
         function loadRecipeById(id) {
             return $http({
@@ -35,18 +35,17 @@
                 var deferred = $q.defer(),
                     loadPromise;
 
-                debugger;
                 if (recipesList.length > 0) {
                     setTimeout(function() {
                         deferred.resolve(recipesList);
                     }, 0);
+                } else {
+                    loadPromise = loadRecipes();
+                    loadPromise.then(function (recipes) {
+                        recipesList = recipes.data;
+                        deferred.resolve(recipesList);
+                    });
                 }
-
-                loadPromise = loadRecipes();
-                loadPromise.then(function(recipes) {
-                    recipesList = recipes.data;
-                    deferred.resolve(recipesList);
-                });
 
                 return deferred.promise;
             },
